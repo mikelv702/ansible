@@ -1,0 +1,9 @@
+- name: tailscale
+  hosts: terraform
+  become: true
+  gather_facts: true
+
+  roles:
+    - role: tailscale
+      vars:
+        tailscale_authkey: "{{ lookup('env', 'TAILSCALE_KEY') }}"

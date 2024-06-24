@@ -1,6 +1,8 @@
 roles:
   - name: robertdebock.fail2ban
     version: 5.0.5
+  - name: tailscale
+    src: https://github.com/mikelv702/ansible-role-tailscale.git
 
 collections:
   - name: community.digitalocean
